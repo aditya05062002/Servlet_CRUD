@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Information Managment System</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #657383;
+            margin: 0;
+            padding: 0;
+        }
+		h1 {
+            text-align: center;
+            color:#2F0909;
+            margin: 20px 0;
+        }
+        form {
+            width: 70%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 4px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to the Student Information Management System</h1>
+<form action="SaveServlet" method="post">
+<table width="70%">
+<tr>
+<td>RollNo</td>
+<td><input type ="text" name ="t1"></td>
+</tr>
+
+<tr>
+<td>Name</td>
+<td><input type ="text" name ="t2"></td>
+</tr>
+
+<tr>
+<td>Marks</td>
+<td><input type ="text" name ="t3"></td>
+</tr>
+
+<tr>
+<td>City</td>
+<td><select name="t4">
+  <option value="Mumbai">Mumbai</option>
+    <option value="Pune">Pune</option>
+    <option value="Nagpur">Nagpur</option>
+    <option value="Thane">Thane</option>
+    <option value="Nashik">Nashik</option>
+    <option value="Kalyan-Dombivali">Kalyan-Dombivali</option>
+    <option value="Vasai-Virar">Vasai-Virar</option>
+    <option value="Aurangabad">Aurangabad</option>
+    <option value="Solapur">Solapur</option>
+    <option value="Bhiwandi-Nizampur">Bhiwandi-Nizampur</option>
+    <option value="Amravati">Amravati</option>
+    <option value="Nanded">Nanded</option>
+    <option value="Kolhapur">Kolhapur</option>
+    <option value="Akola">Akola</option>
+    <option value="Sangli">Sangli</option>
+    <option value="Latur">Latur</option>
+    <option value="Dhule">Dhule</option>
+    <option value="Jalgaon">Jalgaon</option>
+    <option value="Ahmednagar">Ahmednagar</option>
+    <option value="Ichalkaranji">Ichalkaranji</option>
+    <option value="Chandrapur">Chandrapur</option>
+    <option value="Jalna">Jalna</option>
+    <option value="Parbhani">Parbhani</option>
+    <option value="Bhusawal">Bhusawal</option>
+    <option value="Panvel">Panvel</option>
+    <option value="Satara">Satara</option>
+    <option value="Beed">Beed</option>
+    <option value="Yavatmal">Yavatmal</option>
+    <option value="Kamptee">Kamptee</option>
+    <option value="Gondia">Gondia</option>
+    <option value="Barshi">Barshi</option>
+    <option value="Achalpur">Achalpur</option>
+    <option value="Osmanabad">Osmanabad</option>
+    <option value="Nandurbar">Nandurbar</option>
+    <option value="Wardha">Wardha</option>
+    <option value="Udgir">Udgir</option>
+    <option value="Hinganghat">Hinganghat</option>
+    <option value="Deulgaon Raja">Deulgaon Raja</option>
+    <option value="Paithan">Paithan</option>
+    <option value="Chalisgaon">Chalisgaon</option>
+    <option value="Amalner">Amalner</option>
+    <option value="Sindkhed Raja">Sindkhed Raja</option>
+    </select >
+</td>
+</tr>
+
+<tr>
+<td>
+<input type ="submit" value="Save">
+</td>
+</tr>
+
+</table>
+
+</form>
+<a href="ViewServlet">Show Studet</a>
+</body>
+</html>
